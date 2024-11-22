@@ -8,12 +8,12 @@
   "theme_color": "#ff9800",
   "icons": [
     {
-      "src": "/icons/icon-192x192.png",
+      "src": "https://static.vecteezy.com/system/resources/previews/012/806/421/original/3d-cartoon-weather-icon-of-partly-cloudy-sign-of-sun-and-cloud-isolated-on-transparent-background-illustration-of-3d-render-png.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "https://static.vecteezy.com/system/resources/previews/012/806/421/original/3d-cartoon-weather-icon-of-partly-cloudy-sign-of-sun-and-cloud-isolated-on-transparent-background-illustration-of-3d-render-png.png",
       "sizes": "512x512",
       "type": "image/png"
     }

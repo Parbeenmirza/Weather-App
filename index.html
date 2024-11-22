@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Weather App</title>
-  <link rel="stylesheet" href="styles.css" />
-   <link rel="manifest" href="manifest.json" />
-</head>
-<body>
-  <div class="app">
-    <header>
-      <h1>Advanced Weather App</h1>
-      <div class="search">
-        <input type="text" id="city" placeholder="Enter city name" />
-        <button id="search-btn">Search</button>
-        <button id="location-btn">Use My Location</button>
-        <select id="unit-selector">
-          <option value="metric">°C</option>
-          <option value="imperial">°F</option>
-        </select>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Advanced Weather App</h1>
+        <div class="search">
+          <input type="text" id="city" placeholder="Enter city name" />
+          <button id="search-btn">Search</button>
+          <button id="location-btn">Use My Location</button>
+          <select id="unit-selector">
+            <option value="metric">°C</option>
+            <option value="imperial">°F</option>
+          </select>
+        </div>
+      </header>
+
+      <div id="current-weather" class="weather-section">
+        <h2>Current Weather</h2>
+        <div class="weather-box">
+          <h3 id="current-city">City</h3>
+          <img
+            id="current-icon"
+            src="https://static.vecteezy.com/system/resources/previews/012/806/421/original/3d-cartoon-weather-icon-of-partly-cloudy-sign-of-sun-and-cloud-isolated-on-transparent-background-illustration-of-3d-render-png.png"
+            alt="Weather Icon"
+          />
+          <p id="current-temp">Temperature: --</p>
+          <p id="current-condition">Condition: --</p>
+          <p id="current-humidity">Humidity: --%</p>
+          <p id="current-wind">Wind Speed: -- m/s</p>
+          <p id="sunrise">Sunrise: --</p>
+          <p id="sunset">Sunset: --</p>
+        </div>
       </div>
-    </header>
 
-    <div id="current-weather" class="weather-section">
-      <h2>Current Weather</h2>
-      <div class="weather-box">
-        <h3 id="current-city">City</h3>
-        <img id="current-icon" src="https://static.vecteezy.com/system/resources/previews/012/806/421/original/3d-cartoon-weather-icon-of-partly-cloudy-sign-of-sun-and-cloud-isolated-on-transparent-background-illustration-of-3d-render-png.png" alt="Weather Icon" />
-        <p id="current-temp">Temperature: --</p>
-        <p id="current-condition">Condition: --</p>
-        <p id="current-humidity">Humidity: --%</p>
-        <p id="current-wind">Wind Speed: -- m/s</p>
-        <p id="sunrise">Sunrise: --</p>
-        <p id="sunset">Sunset: --</p>
+      <div id="hourly-forecast" class="weather-section">
+        <h2>Hourly Forecast</h2>
+        <div class="forecast-grid" id="hourly-grid"></div>
+      </div>
+
+      <div id="daily-forecast" class="weather-section">
+        <h2>Daily Forecast</h2>
+        <div class="forecast-grid" id="daily-grid"></div>
+      </div>
+
+      <div id="aqi-section" class="weather-section">
+        <h2>Air Quality Index</h2>
+        <div id="aqi-data">
+          <p>Loading...</p>
+        </div>
       </div>
     </div>
-
-    <div id="hourly-forecast" class="weather-section">
-      <h2>Hourly Forecast</h2>
-      <div class="forecast-grid" id="hourly-grid"></div>
-    </div>
-
-    <div id="daily-forecast" class="weather-section">
-      <h2>Daily Forecast</h2>
-      <div class="forecast-grid" id="daily-grid"></div>
-    </div>
-
-    <div id="aqi-section" class="weather-section">
-      <h2>Air Quality Index</h2>
-      <div id="aqi-data">
-        <p>Loading...</p>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

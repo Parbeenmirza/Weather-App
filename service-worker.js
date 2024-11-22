@@ -1,8 +1,7 @@
 const cacheName = "weather-app-v1";
 const assetsToCache = [
-  "/index.html",
   "/styles.css",
-  "/script.js",
+  "/app.js",
   "/manifest.json",
   "/icons/icon-192x192.png",
   "/icons/icon-512x512.png",
