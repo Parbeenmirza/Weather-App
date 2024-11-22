@@ -1,3 +1,11 @@
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/service-worker.js")
+    .then(() => console.log("Service Worker Registered"))
+    .catch((error) =>
+      console.error("Service Worker Registration Failed:", error)
+    );
+}
 const apiKey = "ef6328d657a9e4523387e9f27b789cb2";
 const searchBtn = document.getElementById("search-btn");
 const locationBtn = document.getElementById("location-btn");
@@ -101,4 +109,5 @@ async function updateAQI(lat, lon) {
   const aqiText = ["Good", "Fair", "Moderate", "Poor", "Very Poor"];
   aqiSection.innerHTML = `<p>AQI: ${aqi} (${aqiText[aqi - 1]})</p>`;
 }
+
 
