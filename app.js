@@ -1,17 +1,18 @@
 // Register Service Worker
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("./service-worker.js")
-    .then(() => console.log("Service Worker Registered"))
-    .catch((error) =>
-      console.error("Service Worker Registration Failed:", error)
-    );
+    .register("/weatherapp/service-worker.js")
+    .then((registration) => {
+      console.log("Service Worker registered:", registration);
+    })
+    .catch((error) => {
+      console.error("Service Worker registration failed:", error);
+    });
 }
-
 let deferredPrompt;
 
 // Install button logic
-const installBtn = document.getElementById("install-btn");
+const installBtn = document.getElementById("install-btn")
 
 // Listen for the beforeinstallprompt event
 window.addEventListener("beforeinstallprompt", (e) => {

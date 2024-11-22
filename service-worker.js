@@ -1,11 +1,13 @@
 const cacheName = "weather-app-v1";
 const assetsToCache = [
-  "/styles.css",
-  "/app.js",
-  "/manifest.json",
-  "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png",
+  "/weatherapp/styles.css",
+  "/weatherapp/app.js",
+  "/weatherapp/manifest.json",
+  "/weatherapp/icons/icon-192x192.png",
+  "/weatherapp/icons/icon-512x512.png",
+  "/weatherapp/index.html",
 ];
+
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
