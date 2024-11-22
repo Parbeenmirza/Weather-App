@@ -2,7 +2,7 @@
   "name": "Advanced Weather App",
   "short_name": "WeatherApp",
   "description": "A feature-rich weather app using OpenWeather API.",
-  "start_url": "https://parbeenmirza.github.io/Weather-App/",
+  "start_url": "https://parbeenmirza.github.io/Weather-App",
   "display": "standalone",
   "background_color": "#88a2b4",
   "theme_color": "#ff9800",
